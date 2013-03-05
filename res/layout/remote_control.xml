@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/activityBg"
+    >
+
+        <LinearLayout
+            android:id="@+id/remoteTop"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/vertSpacer"
+            android:layout_marginBottom="@dimen/vertSpacer"
+            android:layout_marginLeft="@dimen/horizSpacer"
+            android:layout_marginRight="@dimen/horizSpacer"
+            >
+
+	        <LinearLayout
+	            android:id="@+id/remoteTopLeft"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:gravity="left"
+	            >
+                
+	            <ImageButton
+	                android:id="@+id/remoteButtonHome"
+	                style="@style/RemoteButton"
+	                android:layout_width="@dimen/smallButtonWidth"
+	                android:layout_height="@dimen/smallButtonHeight"
+	                android:src="@drawable/remote_home_bg"
+	                android:tag="button.home"
+	                android:onClick="onRemoteButtonClick"
+	                />
+	            <ImageButton
+	                android:id="@+id/remoteButtonToggleFullscreen"
+	                style="@style/RemoteButton"
+	                android:layout_width="@dimen/smallButtonWidth"
+	                android:layout_height="@dimen/smallButtonHeight"
+	                android:src="@drawable/remote_togglefullscreen_bg"
+	                android:tag="button.togglefullscreen"
+	                android:onClick="onRemoteButtonClick"
+	                />
+	            	            	            	            
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:id="@+id/remoteTopRight"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:gravity="right" 
+	            >
+	            
+	            <ImageButton
+	                android:id="@+id/remoteButtonPower"
+	                style="@style/RemoteButton"
+	                android:layout_width="@dimen/smallButtonWidth"
+	                android:layout_height="@dimen/smallButtonHeight"
+	                android:src="@drawable/remote_power_bg"
+	                android:tag="button.power"
+	                android:onClick="onRemoteButtonClick"
+	                />
+	            	            	            
+	        </LinearLayout>
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/remoteDpadTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/horizSpacer"
+            android:layout_marginRight="@dimen/horizSpacer"
+            >
+	        
+			<ImageButton
+				android:id="@+id/remoteButtonOsd"
+				style="@style/RemoteButton"
+				android:layout_width="@dimen/regButtonWidth"
+				android:layout_height="@dimen/regButtonHeight"
+			 	android:src="@drawable/remote_osd_bg"
+			 	android:tag="button.osd"
+			 	android:onClick="onRemoteButtonClick"
+			    />
+			<ImageButton
+				android:id="@+id/remoteButtonUp"
+				style="@style/RemoteButton"
+				android:layout_width="@dimen/largeButtonWidth"
+				android:layout_height="@dimen/regButtonHeight"
+				android:src="@drawable/remote_dpad_up_bg"
+				android:tag="button.dpad_up"
+				android:onClick="onRemoteButtonClick"
+				/>
+			<ImageButton
+				android:id="@+id/remoteButtonInfo"
+				style="@style/RemoteButton"
+				android:layout_width="@dimen/regButtonWidth"
+				android:layout_height="@dimen/regButtonHeight"
+				android:src="@drawable/remote_info_bg"
+				android:tag="button.info"
+				android:onClick="onRemoteButtonClick"
+				/>
+   	            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/remoteDpadMiddle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/horizSpacer"
+            android:layout_marginRight="@dimen/horizSpacer"
+            >
+			
+			<ImageButton
+				android:id="@+id/remoteButtonLeft"
+				style="@style/RemoteButton"
+				android:layout_width="@dimen/regButtonWidth"
+				android:layout_height="@dimen/largeButtonHeight"
+				android:src="@drawable/remote_dpad_left_bg"
+				android:tag="button.dpad_left"
+				android:onClick="onRemoteButtonClick"
+				/>
+			<ImageButton
+				android:id="@+id/remoteButtonOK"
+				style="@style/RemoteButton"
+				android:layout_width="@dimen/largeButtonWidth"
+				android:layout_height="@dimen/largeButtonHeight"
+				android:src="@drawable/remote_ok_bg"
+				android:tag="button.ok"
+				android:onClick="onRemoteButtonClick"
+				/>
+			<ImageButton
+				android:id="@+id/remoteButtonRight"
+				style="@style/RemoteButton"
+				android:layout_width="@dimen/regButtonWidth"
+				android:layout_height="@dimen/largeButtonHeight"
+				android:src="@drawable/remote_dpad_right_bg"
+				android:tag="button.dpad_right"
+				android:onClick="onRemoteButtonClick"
+				/>
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/remoteDpadBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/horizSpacer"
+            android:layout_marginRight="@dimen/horizSpacer"
+            >
+            
+			<ImageButton
+				android:id="@+id/remoteButtonBack"
+				style="@style/RemoteButton"
+				android:layout_width="@dimen/regButtonWidth"
+				android:layout_height="@dimen/regButtonHeight"
+				android:src="@drawable/remote_back_bg"
+				android:tag="button.back"
+				android:onClick="onRemoteButtonClick"
+				/>
+			<ImageButton
+				android:id="@+id/remoteButtonDown"
+				style="@style/RemoteButton"
+				android:layout_width="@dimen/largeButtonWidth"
+				android:layout_height="@dimen/regButtonHeight"
+				android:src="@drawable/remote_dpad_down_bg"
+				android:tag="button.dpad_down"
+				android:onClick="onRemoteButtonClick"
+				/>
+			<ImageButton
+				android:id="@+id/remoteButtonMenu"
+				style="@style/RemoteButton"
+				android:layout_width="@dimen/regButtonWidth"
+				android:layout_height="@dimen/regButtonHeight"
+				android:src="@drawable/remote_menu_bg"
+				android:tag="button.menu" 
+				android:onClick="onRemoteButtonClick"
+				/>
+            	            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/remoteBottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/vertSpacer"
+            android:layout_marginBottom="@dimen/vertSpacer"
+            android:layout_marginLeft="@dimen/horizSpacer"
+            android:layout_marginRight="@dimen/horizSpacer"
+            >
+	       
+	        <LinearLayout
+	            android:id="@+id/remoteBottomLeft"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            >
+                
+	            <ImageButton
+	                android:id="@+id/remoteButtonPrevious"
+	                style="@style/RemoteButton"
+	                android:layout_width="@dimen/smallButtonWidth"
+	                android:layout_height="@dimen/smallButtonHeight"
+	                android:src="@drawable/remote_skip_previous_bg"
+	                android:tag="button.skip_previous"
+	                android:onClick="onRemoteButtonClick"
+	                />
+	            <ImageButton
+	                android:id="@+id/remoteButtonNext"
+	                style="@style/RemoteButton"
+	                android:layout_width="@dimen/smallButtonWidth"
+	                android:layout_height="@dimen/smallButtonHeight"
+	                android:src="@drawable/remote_skip_next_bg"
+	                android:tag="button.skip_next" 
+	                android:onClick="onRemoteButtonClick"
+	                />
+	            	            	            
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:id="@+id/remoteBottomRight"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:orientation="vertical"
+	            android:gravity="right" 
+	            >
+	            
+	            <LinearLayout
+	                android:id="@+id/remoteBottomRightTop"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                >
+
+		            <ImageButton
+		                android:id="@+id/remoteButtonPlay"
+		                style="@style/RemoteButton"
+		                android:layout_width="@dimen/smallButtonWidth"
+		                android:layout_height="@dimen/smallButtonHeight"
+		                android:src="@drawable/remote_playpause_bg"
+		                android:tag="button.play" 
+		                android:onClick="onRemoteButtonClick"
+		                />
+		            <ImageButton
+		                android:id="@+id/remoteButtonStop"
+		                style="@style/RemoteButton"
+		                android:layout_width="@dimen/smallButtonWidth"
+		                android:layout_height="@dimen/smallButtonHeight"
+		                android:src="@drawable/remote_stop_bg"
+		                android:tag="button.stop" 
+		                android:onClick="onRemoteButtonClick"
+		                />
+	                	                	                
+	            </LinearLayout>
+	            
+	            <LinearLayout
+	                android:id="@+id/remoteBottomRightBottom"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                >
+
+		            <ImageButton
+		                android:id="@+id/remoteButtonRewind"
+		                style="@style/RemoteButton"
+		                android:layout_width="@dimen/smallButtonWidth"
+		                android:layout_height="@dimen/smallButtonHeight"
+		                android:src="@drawable/remote_rewind_bg"
+		                android:tag="button.rewind" 
+		                android:onClick="onRemoteButtonClick"
+		                />
+		            <ImageButton
+		                android:id="@+id/remoteButtonFastforward"
+		                style="@style/RemoteButton"
+		                android:layout_width="@dimen/smallButtonWidth"
+		                android:layout_height="@dimen/smallButtonHeight"
+		                android:src="@drawable/remote_fastforward_bg"
+		                android:tag="button.fastforward" 
+		                android:onClick="onRemoteButtonClick"
+		                />
+	                	                	                
+	            </LinearLayout>
+	            	            
+	        </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

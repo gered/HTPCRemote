@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <dimen name="widget_medium_smallButtonWidth">45dp</dimen>
+    <dimen name="widget_medium_smallButtonHeight">45dp</dimen>
+    <dimen name="widget_medium_regButtonWidth">58dp</dimen>
+    <dimen name="widget_medium_regButtonHeight">58dp</dimen>
+    <dimen name="widget_medium_largeButtonWidth">116dp</dimen>
+    <dimen name="widget_medium_largeButtonHeight">116dp</dimen>
+    <dimen name="widget_medium_dpadWidth">240dp</dimen>
+    <dimen name="widget_medium_dpadHeight">240dp</dimen>
+    <dimen name="widget_medium_margin1dp">1dp</dimen>
+    <dimen name="widget_medium_margin2dp">2dp</dimen>
+    
+</resources>

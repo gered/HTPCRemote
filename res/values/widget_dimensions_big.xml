@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <dimen name="widget_big_smallButtonWidth">61dp</dimen>
+    <dimen name="widget_big_smallButtonHeight">61dp</dimen>
+    <dimen name="widget_big_regButtonWidth">78dp</dimen>
+    <dimen name="widget_big_regButtonHeight">78dp</dimen>
+    <dimen name="widget_big_largeButtonWidth">156dp</dimen>
+    <dimen name="widget_big_largeButtonHeight">156dp</dimen>
+    
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <dimen name="smallButtonWidth">57dp</dimen>
+    <dimen name="smallButtonHeight">57dp</dimen>
+    <dimen name="regButtonWidth">73dp</dimen>
+    <dimen name="regButtonHeight">73dp</dimen>
+    <dimen name="largeButtonWidth">145dp</dimen>
+    <dimen name="largeButtonHeight">145dp</dimen>
+    <dimen name="horizSpacer">10dp</dimen>
+    <dimen name="vertSpacer">5dp</dimen>
+    
+</resources>
